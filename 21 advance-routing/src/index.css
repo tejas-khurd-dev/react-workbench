@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer components {
+  
+  .pageDiv {
+    @apply bg-black text-white min-h-screen pb-5;
+  }
+
+  .maiHuDiv {
+     @apply text-[8rem] whitespace-nowrap underline p-5 text-center;
+  }
+
+
+  .navbar {
+    @apply bg-blue-700 px-8 py-4 flex justify-center;
+  }
+
+  .nav-list {
+    @apply list-none flex gap-16 m-0 p-0;
+  }
+
+  .nav-list li a {
+    @apply text-white font-bold no-underline transition-colors duration-300;
+  }
+
+  .nav-list li a:hover {
+    @apply text-gray-300;
+  }
+
+  .footer {
+    @apply bg-blue-700 text-white text-center py-4;
+  }
+
+  /* Products */
+  .product-list ul {
+    @apply list-none flex gap-16 m-0 p-5 text-lg justify-start items-center;
+  }
+
+  .product-list li a {
+    @apply text-white font-bold no-underline transition-colors duration-300;
+  }
+
+  .product-list li a:hover {
+    @apply text-gray-300;
+  }
+
+  .product-link {
+    @apply text-white font-bold no-underline text-lg m-5;
+  }
+}
+
+
+
