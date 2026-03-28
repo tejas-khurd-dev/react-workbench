@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+}
+
+.maiHuDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 8rem;
+  white-space: nowrap;
+  text-decoration: underline;
+  transform: translate(-50%,-50%);
+}
+
+.navbar {
+  background-color: #4a90e2;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #ffeb3b;
+}

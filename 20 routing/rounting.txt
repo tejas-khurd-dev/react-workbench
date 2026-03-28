@@ -1,0 +1,4 @@
+BrowserRouter
+
+in.pinterest.com or in.pinterest.com/ = path: '/'
+in.pinterest.com/today = path:  '/today'
