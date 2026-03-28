@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #eeeeeeca;
+  color: #000000;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card{
+  width: 260px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 0, 0, 0.329) ;
+  padding: 3px;
+}
+
+.top button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid rgba(7, 7, 7, 0.304);
+  padding: 1px 6px;
+  color: #00000033;
+  border-radius: 5px;
+}
+
+.save {
+  padding-right: 5px;
+}
+
+.center {
+  margin-top: 25px;
+}
+
+.center h3 {
+  font-size: 18.5px;
+  color: #000000d0;
+}
+
+#time {
+  font-size: 12px;
+  color: #00000046;
+}
+  
+#role {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.tag-container{
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.tag {
+  background-color: #ededed;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #000000bb;
+}
+
+.bottom {
+  margin-top: 100px;
+}
+
+.bottom-value-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price-and-location {
+  margin-top: 5px;
+}
+
+.location {
+  font-size: 10px;
+  color: #0000004d;
+}
+
+.apply-button {
+  background-color: #000000;
+  color: #f0f0f0;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 12px;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
