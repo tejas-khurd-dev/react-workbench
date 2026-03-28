@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer components {
+
+  .other-products-section {
+    @apply w-full min-h-screen relative pt-25 mb-25 md:mb-8 mt-12 sm:mt-4;
+  }
+
+  .other-products-container {
+    @apply max-w-7xl mx-auto p-4 sm:p-6 lg:p-8;
+  }
+
+  .other-products-heading {
+    @apply font-bold mb-1 text-center;
+    font-size: clamp(1.25rem, 4vw, 2rem);
+  }
+
+  .other-products-grid {
+    @apply flex flex-wrap justify-around gap-12 sm:gap-4 sm:gap-6 items-center relative top-15 sm:top-22 lg:top-25;
+  }
+
+  .other-product-card {
+    @apply grid place-items-end rounded-4xl overflow-hidden border-2 border-gray-600/30;
+    width: clamp(14rem, 32vw, 20rem);
+  }
+
+  .other-product-image-wrap {
+    @apply w-full overflow-hidden bg-black col-start-1 col-end-2 row-start-1 row-end-2;
+    height: clamp(20rem, 28vw, 26rem);
+  }
+
+  .other-product-image {
+    @apply w-full h-full object-cover transition-transform ease-in-out duration-700 hover:scale-105;
+  }
+
+  .other-product-info-wrapper {
+    @apply col-start-1 col-end-2 row-start-1 row-end-2 w-full backdrop-blur-2xl;
+  }
+
+  .other-product-info {
+    @apply flex flex-col justify-center items-center p-4 bg-transparent;
+  }
+
+  .other-product-name {
+    @apply text-white;
+    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  }
+
+  .other-product-btn {
+    @apply flex items-center justify-center bg-gray-700 text-white rounded-xl mt-3 p-2 w-[55%] hover:bg-gray-800 transition-colors duration-500;
+    font-size: clamp(0.75rem, 1.3vw, 0.95rem);
+    gap: 0.5rem;
+  }
+
+}

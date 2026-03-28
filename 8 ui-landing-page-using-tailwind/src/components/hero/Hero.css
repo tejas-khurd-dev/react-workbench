@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+
+@layer components {
+
+  .hero-section {
+    @apply relative bg-black text-white overflow-hidden pt-8;
+  }
+
+  .hero-bg-text-wrapper {
+    @apply absolute inset-0 flex justify-center items-center pointer-events-none;
+  }
+
+  .hero-bg-text {
+    @apply font-bold text-gray-500/20 select-none leading-none;
+    font-size: clamp(4rem, 40vw, 35rem);  
+  }
+
+  .hero-container {
+    @apply relative flex items-center max-w-7xl mx-auto p-8 min-h-screen px-4 sm:px-6 lg:px-8 justify-center;
+  }
+
+  .hero-inner {
+    @apply flex flex-col-reverse lg:flex-row items-center justify-between;
+    gap: clamp(2rem, 5vw, 2.5rem);        
+  }
+
+  .hero-left-content {
+    @apply w-full lg:w-1/2 text-center lg:text-left;
+  }
+
+  .hero-title-container {
+    @apply relative  md:mb-12;
+  }
+
+  .hero-title {
+    @apply font-bold;
+    font-size: clamp(2.25rem, 6vw, 4.5rem);  
+  }
+
+  .hero-subtitle {
+    @apply text-gray-400;
+    font-size: clamp(1.25rem, 3vw, 2.5rem);  
+  }
+
+
+  .hero-description {
+    @apply mt-5 sm:mt-18 max-w-sm sm:max-w-lg mx-auto lg:mx-0 leading-relaxed text-gray-300;
+    font-size: clamp(0.8125rem, 1.5vw, 1rem); 
+  }
+
+
+  .hero-btn {
+    @apply mt-4 sm:mt-10 mx-auto lg:mx-0 flex items-center gap-1 py-2 px-5 rounded-full bg-white text-black cursor-pointer;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+  }
+
+
+  .hero-right-img-wrapper {
+    @apply w-full lg:w-1/2 flex justify-center;
+  }
+
+  .hero-img {
+    @apply object-contain lg:ml-48 lg:mb-10;
+    width: clamp(15rem, 28vw, 28rem); 
+  }
+}
