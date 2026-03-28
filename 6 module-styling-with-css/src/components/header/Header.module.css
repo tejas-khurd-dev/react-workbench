@@ -1,0 +1,33 @@
+/* Module CSS */
+
+.header {
+  display: flex;
+  background-color: #4998ed;
+  color: #111;
+  justify-content: space-between;
+  height: auto;
+}
+
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header h2 {
+  margin: 15px;
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: rgb(202, 138, 207);
+  color: white;
+  margin: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 120px;
+  border: none;
+}
