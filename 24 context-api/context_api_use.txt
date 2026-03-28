@@ -1,0 +1,5 @@
+Steps:-
+
+1. Create karo context
+2. provide karo data
+3. use karo data
