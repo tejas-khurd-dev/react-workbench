@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer components {
+  .gallery-wrapper {
+    @apply bg-black h-screen w-full text-white flex flex-col;
+  }
+
+  .gallery-header {
+    @apply flex items-center gap-3 px-4 sm:px-6 py-4 sm:py-5 border-b border-gray-800;
+  }
+
+  .gallery-header-badge {
+    @apply w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-400 text-black font-semibold text-sm flex items-center justify-center;
+  }
+
+  .gallery-header-title {
+    @apply text-lg sm:text-xl font-semibold text-white;
+  }
+
+  .gallery-grid {
+    @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-6 overflow-y-auto flex-1;
+  }
+
+  .gallery-grid::-webkit-scrollbar {
+    width: 10px;
+    margin: 5px  0px;
+  }
+
+  .gallery-grid::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+  }
+
+  .gallery-grid::-webkit-scrollbar-thumb {
+    background-color: #eebf0559;
+    border-radius: 8px;
+  }
+
+  .gallery-grid::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(238, 191, 5, 0.878);
+
+  }
+
+  .gallery-loading-text {
+    @apply text-gray-400 text-lg col-span-2 sm:col-span-3 lg:col-span-4 text-center mt-60;
+  }
+
+  .gallery-card {
+    @apply rounded-2xl overflow-hidden border border-gray-700 hover:border-amber-400;
+  }
+
+  .gallery-card-img {
+    @apply h-40 sm:h-48 md:h-56 w-full object-cover;
+  }
+
+  .gallery-card-footer {
+    @apply px-3 py-2 bg-black;
+  }
+
+  .gallery-card-author {
+    @apply text-sm font-semibold text-white text-center;
+  }
+
+  .gallery-pagination {
+    @apply flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 border-t border-gray-800;
+  }
+
+  .gallery-pagination-info {
+    @apply text-gray-400 text-sm;
+  }
+
+  .gallery-btn {
+    @apply flex items-center gap-1 sm:gap-2 px-3 sm:px-5 py-2 bg-amber-400 text-black font-semibold rounded-lg cursor-pointer active:scale-95 text-sm sm:text-base;
+  }
+}
